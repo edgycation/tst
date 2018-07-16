@@ -1,5 +1,10 @@
 from flask import Flask, send_from_directory
 app = Flask(__name__)
+from math import pi
+
+def ympyran_pa(r): return pi * r * r
+
+def lista_htmlksi(lista): return "<ul>" + "".join("<li>" + x for x in sorted(lista)) + "</ul>"
 
 def lista_htmliksi(lista):return "<UL>" + "".join("<LI>" + x for x in sorted(lista)) + "</UL>"
 
